@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cho kwi hun</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html"><img src="img/sign_darkmode.png" alt="sign"></a></h1>
+        <nav>
+            <a href="about.html" id="about">About</a>
+            <a href="portfolio.html" id="portfolio">Portfolio</a>
+        </nav>
+    </header>
+    <figure>
+        <div id="video">
+            <video autoplay loop muted playsinline>
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline>
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline>
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline class="tab_pc_only_vid">
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline class="tab_pc_only_vid">
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay loop muted playsinline class="tab_pc_only_vid">
+                <source src="video/mainpage_144p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!--issue : audio 태그 div컨테이너로 감싸지 않으면 사운드 재생 중일때만 media query 작동함-->
+        <div id="audio">
+            <audio controls>
+                <source src="sound/mainpage_bgm.mp3" type="audio/mp3">
+                Your browser doe not support the audio tag.
+            </audio>
+        </div>
+    </figure>
+    <footer>
+        <p class="footerinfo">Cho kwi hun</p>
+        <p id="center">Form follows Ambition.</p>
+        <p class="footerinfo">jkuihun@naver.com</p>
+    </footer>
+</body>
+</html>
