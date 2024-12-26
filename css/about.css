@@ -7,7 +7,6 @@
 main{
     padding: 0vh 6vw;
     color: var(--main-font-color);
-    font-family: var(--main-font-family);
 }
 #about_video{
     width: 100%;
@@ -15,6 +14,7 @@ main{
 .introduce{
     line-height: 1.5;
     padding-bottom: 5vh;
+    font-family: var(--main-font-family);
 }
 .introduce > li:first-child{
     font-size: 2rem;
