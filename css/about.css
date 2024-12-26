@@ -30,12 +30,12 @@ main{
         align-items: top;
     }
     .introduce > li:first-child{
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 2.5;
 }
 
     .introduce{
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 0;
     }
 }
