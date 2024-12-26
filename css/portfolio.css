@@ -1,0 +1,35 @@
+@import url(variables.css);
+
+
+
+main{
+    padding: 0vh 6vw;
+    color: var(--main-font-color);
+    font-family: var(--main-font-family);
+}
+#videolist{
+    display: grid;
+    gap: 0.5vw;
+    line-height: 1.8;
+}
+.video_wrap{
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+}
+.thumbnail{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 720px) {
+    #videolist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #videolist{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

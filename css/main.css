@@ -1,0 +1,48 @@
+@import url(variables.css);
+
+
+
+figure{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+figure > div#video{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+figure > div#video > .tab_pc_only_vid{
+    display: none;
+}
+figure > div#audio{
+    padding: 1vw;
+    
+}
+
+
+@media screen and (min-width: 720px) {
+    body {
+        height: 100vh;
+    }
+    figure > div#video > .tab_pc_only_vid{
+        display: inline;
+    }
+    figure > div#video{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        width: 100%;
+    }
+    figure > div#video > video {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+
+/*issue*/
+/*audio 태그 div 컨테이너로 감싸지 않으면 사운드 재생중일때만 media query 작동하는 문제 있었음.*/

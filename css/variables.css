@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+:root{
+    --main-font-color: white;
+    --main-font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+body{
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+
+
+
+.title{
+    font-family: var(--main-font-family);
+    color: var(--main-font-color);
+    font-size: 3rem;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    body{
+        height: 100vh;
+    }
+    .title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}

@@ -1,0 +1,50 @@
+@import url(variables.css);
+
+
+
+header{
+    padding: 0vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header > h1 > a > img{
+    padding-top: 3vw;
+    width: 20vw;
+}
+header > nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    
+}
+header > nav > a {
+    font-family: var(--main-font-family);
+    padding: 1vh 0vw;
+    color: var(--main-font-color);
+}
+
+@media screen and (min-width: 720px) {
+    header{
+        padding: 2vh 6vw;
+        flex-direction: row;
+    }
+    header > h1 > a > img{
+        padding-top: 0vw;
+        width: 10vw;
+    }
+    header > nav{
+        justify-content: space-between;
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header > h1 > a > img{
+        width: 8vw;
+    }
+    header > nav > a {
+        font-size: 1.3rem;
+    }
+}
