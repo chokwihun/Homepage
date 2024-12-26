@@ -29,7 +29,13 @@ main{
         gap: 3vw;
         align-items: top;
     }
+    .introduce > li:first-child{
+    font-size: 4rem;
+    line-height: 2.5;
+}
+
     .introduce{
+        font-size: 3rem;
         padding: 0;
     }
 }
